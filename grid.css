@@ -1,6 +1,4 @@
-@charset utf-8;
-/* Tue, 02 Dec 2014 04:00:40 -0600 */
-*,:after,:before {
+*,*:after,*:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -31,6 +29,14 @@
 
 .column.without-padding,.columns.without-padding {
     padding-left: 0;
+    padding-right: 0;
+}
+
+.column .column:first-of-type,.column .columns:first-of-type,.columns .column:first-of-type,.columns .columns:first-of-type, .columns:first-of-type, .column:first-of-type {
+    padding-left: 0;
+}
+
+.column .column:last-of-type,.column .columns:last-of-type,.columns .column:last-of-type,.columns .columns:last-of-type {
     padding-right: 0;
 }
 
@@ -82,16 +88,64 @@
     width: 8.33%;
 }
 
+.column.one:nth-child(n+13), .columns.one:nth-child(n+13) {
+    padding-top: 20px;   
+}
+
+.column.one:nth-child(13n), .columns.one:nth-child(13n) {
+	 padding-left: 0 
+}
+
+.column.one:nth-child(12n), .columns.one:nth-child(12n) {
+	 padding-right: 0 
+}
+
 .column.two,.columns.two {
     width: 16.66%;
+}
+
+.column.two:nth-child(n+7), .columns.two:nth-child(n+7) {
+    padding-top: 20px;   
+}
+
+.column.two:nth-child(7n), .columns.two:nth-child(7n) {
+	 padding-left: 0 
+}
+
+.column.two:nth-child(6n), .columns.two:nth-child(6n) {
+	 padding-right: 0 
 }
 
 .column.three,.columns.three {
     width: 25%;
 }
 
+.column.three:nth-child(n+5), .columns.three:nth-child(n+5) {
+    padding-top: 20px;   
+}
+
+.column.three:nth-child(5n), .columns.three:nth-child(5n) {
+	 padding-left: 0 
+}
+
+.column.three:nth-child(4n), .columns.three:nth-child(4n) {
+	 padding-right: 0 
+}
+
 .column.four,.columns.four {
     width: 33.33%;
+}
+
+.column.four:nth-child(n+4), .columns.four:nth-child(n+4) {
+    padding-top: 20px;   
+}
+
+.column.four:nth-child(4n), .columns.four:nth-child(4n) {
+	 padding-left: 0 
+}
+
+.column.four:nth-child(3n), .columns.four:nth-child(3n) {
+	 padding-right: 0 
 }
 
 .column.five,.columns.five {
@@ -101,6 +155,19 @@
 .column.six,.columns.six {
     width: 50%;
 }
+
+.column.six:nth-child(n+3), .columns.six:nth-child(n+3) {
+    padding-top: 20px;   
+}
+
+.column.six:nth-child(3n), .columns.six:nth-child(3n) {
+	 padding-left: 0 
+}
+
+.column.six:nth-child(2n), .columns.six:nth-child(2n) {
+	 padding-right: 0 
+}
+
 
 .column.seven,.columns.seven {
     width: 58.33%;
@@ -126,19 +193,7 @@
     width: 100%;
 }
 
-.column .column:first-of-type,.column .columns:first-of-type,.columns .column:first-of-type,.columns .columns:first-of-type,.columns:first-of-type,.column:first-of-type,.column.one:nth-child(13n),.columns.one:nth-child(13n),.column.two:nth-child(7n),.columns.two:nth-child(7n),.column.three:nth-child(5n),.columns.three:nth-child(5n),.column.four:nth-child(4n),.columns.four:nth-child(4n),.column.six:nth-child(3n),.columns.six:nth-child(3n) {
-    padding-left: 0;
-}
-
-.column .column:last-of-type,.column .columns:last-of-type,.columns .column:last-of-type,.columns .columns:last-of-type,.column.one:nth-child(12n),.columns.one:nth-child(12n),.column.two:nth-child(6n),.columns.two:nth-child(6n),.column.three:nth-child(4n),.columns.three:nth-child(4n),.column.four:nth-child(3n),.columns.four:nth-child(3n),.column.six:nth-child(2n),.columns.six:nth-child(2n) {
-    padding-right: 0;
-}
-
-.column.one:nth-child(n+13),.columns.one:nth-child(n+13),.column.two:nth-child(n+7),.columns.two:nth-child(n+7),.column.three:nth-child(n+5),.columns.three:nth-child(n+5),.column.four:nth-child(n+4),.columns.four:nth-child(n+4),.column.six:nth-child(n+3),.columns.six:nth-child(n+3) {
-    padding-top: 20px;
-}
-
-@media only screen and max-width 767px {
+@media only screen and (max-width: 767px) {
     .row {
         width: 100%;
         min-width: 0;
@@ -148,22 +203,23 @@
         margin-left: 0;
     }
 
-    .column.one:nth-child(n),.column.two:nth-child(n+7),.columns.two:nth-child(n+7),.column.two:nth-child(7n),.columns.two:nth-child(7n),.column.two:nth-child(6n),.columns.two:nth-child(6n),.column.three:nth-child(n+5),.columns.three:nth-child(n+5),.column.three:nth-child(5n),.columns.three:nth-child(5n),.column.three:nth-child(4n),.columns.three:nth-child(4n),.column.four:nth-child(n+4),.columns.four:nth-child(n+4),.column.four:nth-child(4n),.columns.four:nth-child(4n),.column.four:nth-child(3n),.columns.four:nth-child(3n),.column.six:nth-child(n+3),.columns.six:nth-child(n+3),.column.six:nth-child(3n),.columns.six:nth-child(3n),.column.six:nth-child(2n),.columns.six:nth-child(2n) {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 0;
-    }
-
     .column.one,.column.two,.column.three,.column.four,.column.five,.column.six,.column.seven,.column.eight,.column.nine,.column.ten,.column.eleven,.column.twelve,.columns.one,.columns.two,.columns.three,.columns.four,.columns.five,.columns.six,.columns.seven,.columns.eight,.columns.nine,.columns.ten,.columns.eleven,.columns.twelve {
         width: auto;
         float: none;
         padding-left: 10px;
         padding-right: 10px;
-        padding-bottom: 10px;
+		padding-bottom: 10px;
     }
-
+	
     .column.one .column,.column.one .columns,.column.two .column,.column.two .columns,.column.three .column,.column.three .columns,.column.four .column,.column.four .columns,.column.five .column,.column.five .columns,.column.six .column,.column.six .columns,.column.seven .column,.column.seven .columns,.column.eight .column,.column.eight .columns,.column.nine .column,.column.nine .columns,.column.ten .column,.column.ten .columns,.column.eleven .column,.column.eleven .columns,.column.twelve .column,.column.twelve .columns,.columns.one .column,.columns.one .columns,.columns.two .column,.columns.two .columns,.columns.three .column,.columns.three .columns,.columns.four .column,.columns.four .columns,.columns.five .column,.columns.five .columns,.columns.six .column,.columns.six .columns,.columns.seven .column,.columns.seven .columns,.columns.eight .column,.columns.eight .columns,.columns.nine .column,.columns.nine .columns,.columns.ten .column,.columns.ten .columns,.columns.eleven .column,.columns.eleven .columns,.columns.twelve .column,.columns.twelve .columns {
         padding-left: 0;
         padding-right: 0;
     };
+	
+	.column.one:nth-child(n+13), .columns.one:nth-child(n+13),  .column.one:nth-child(12n), .columns.one:nth-child(12n), .column.one:nth-child(13n), .columns.one:nth-child(13n) .column.two:nth-child(n+7), .columns.two:nth-child(n+7), .column.two:nth-child(7n), .columns.two:nth-child(7n), .column.two:nth-child(6n), .columns.two:nth-child(6n), .column.three:nth-child(n+5), .columns.three:nth-child(n+5), .column.three:nth-child(5n), .columns.three:nth-child(5n),.column.three:nth-child(4n), .columns.three:nth-child(4n), .column.four:nth-child(n+4), .columns.four:nth-child(n+4), .column.four:nth-child(4n), .columns.four:nth-child(4n), .column.four:nth-child(3n), .columns.four:nth-child(3n), .column.six:nth-child(n+3), .columns.six:nth-child(n+3), .column.six:nth-child(3n), .columns.six:nth-child(3n), .column.six:nth-child(2n), .columns.six:nth-child(2n) {
+		padding-left: 10px;
+        padding-right: 10px;
+		padding-top: 0;
+	}
+
 }

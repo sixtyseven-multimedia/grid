@@ -7,7 +7,6 @@
 .row {
     overflow: hidden;
     max-width: 1140px;
-    min-width: 768px;
     margin: 0 auto;
 }
 
@@ -33,7 +32,7 @@
     padding-right: 0;
 }
 
-.column .column:first-of-type,.column .columns:first-of-type,.columns .column:first-of-type,.columns .columns:first-of-type {
+.column .column:first-of-type,.column .columns:first-of-type,.columns .column:first-of-type,.columns .columns:first-of-type, .columns:first-of-type, .column:first-of-type {
     padding-left: 0;
 }
 
@@ -104,7 +103,7 @@
 .column.three,.columns.three {
     width: 25%;
 }
-.column.three:nth-child(4n), .columns.four:nth-child(4n) {
+.column.three:nth-child(5n), .columns.thre:nth-child(5n) {
 	 padding-left: 0 
 }
 
@@ -112,8 +111,12 @@
     width: 33.33%;
 }
 
-.column.four:nth-child(5n), .columns.four:nth-child(5n) {
+.column.four:nth-child(4n), .columns.four:nth-child(4n) {
 	 padding-left: 0 
+}
+
+.column.four:nth-child(3n), .columns.four:nth-child(3n) {
+	 padding-right: 0 
 }
 
 .column.five,.columns.five {

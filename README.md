@@ -1,6 +1,10 @@
 # grid
 
-A simple, responsive, twelve column grid framework.
+A simple, responsive, twelve column grid framework, enhanced from David Lumley's Concrete.
+
+## About
+
+I stumbled over [Concrete](https://github.com/davidlumley/concrete) and loved the simplicity and naturalness of its use. But I needed a way to let rows float a bit different, so I decided to fork it.
 
 ## Usage
 

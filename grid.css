@@ -88,27 +88,56 @@
     width: 8.33%;
 }
 
+.column.one:nth-child(n+13), .columns.one:nth-child(n+13) {
+    padding-top: 20px;   
+}
+
 .column.one:nth-child(13n), .columns.one:nth-child(13n) {
 	 padding-left: 0 
+}
+
+.column.one:nth-child(12n), .columns.one:nth-child(12n) {
+	 padding-right: 0 
 }
 
 .column.two,.columns.two {
     width: 16.66%;
 }
 
+.column.two:nth-child(n+7), .columns.two:nth-child(n+7) {
+    padding-top: 20px;   
+}
+
 .column.two:nth-child(7n), .columns.two:nth-child(7n) {
 	 padding-left: 0 
+}
+
+.column.two:nth-child(6n), .columns.two:nth-child(6n) {
+	 padding-right: 0 
 }
 
 .column.three,.columns.three {
     width: 25%;
 }
+
+.column.three:nth-child(n+5), .columns.three:nth-child(n+5) {
+    padding-top: 20px;   
+}
+
 .column.three:nth-child(5n), .columns.thre:nth-child(5n) {
 	 padding-left: 0 
 }
 
+.column.three:nth-child(4n), .columns.three:nth-child(4n) {
+	 padding-right: 0 
+}
+
 .column.four,.columns.four {
     width: 33.33%;
+}
+
+.column.four:nth-child(n+4), .columns.four:nth-child(n+4) {
+    padding-top: 20px;   
 }
 
 .column.four:nth-child(4n), .columns.four:nth-child(4n) {
@@ -127,8 +156,16 @@
     width: 50%;
 }
 
+.column.six:nth-child(n+3), .columns.six:nth-child(n+3) {
+    padding-top: 20px;   
+}
+
 .column.six:nth-child(3n), .columns.six:nth-child(3n) {
 	 padding-left: 0 
+}
+
+.column.six:nth-child(2n), .columns.six:nth-child(2n) {
+	 padding-right: 0 
 }
 
 

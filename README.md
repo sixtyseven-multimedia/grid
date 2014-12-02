@@ -1,10 +1,10 @@
-# Concrete
+# grid
 
 A simple, responsive, twelve column grid framework.
 
 ## Usage
 
-Concrete's grid is build using `columns` classes which are inside of a `row` class.
+Grid is build using `columns` classes which are inside of a `row` class.
 
 The `row` class encapsulates the `columns`. As Concrete uses a twelve column grid, the `twelve columns` class will take up the whole of the row.
 
@@ -39,8 +39,4 @@ You can put a `row` class inside of a `column` class in order to nest `columns`.
 
 You can also [see it in action](http://davidlumley.github.io/concrete/).
 
-## Contributing
 
-If you're eager to contribute to Concrete's development, please fork it, create a feature branch, then make a pull request.
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/davidlumley/concrete/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

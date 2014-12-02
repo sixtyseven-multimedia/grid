@@ -41,6 +41,4 @@ You can put a `row` class inside of a `column` class in order to nest `columns`.
       </div>
     </div>
 
-You can also [see it in action](http://davidlumley.github.io/concrete/).
-
 

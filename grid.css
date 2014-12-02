@@ -1,8 +1,5 @@
-html,body {
-    margin: 0;
-    padding: 0;
-}
-
+@charset "utf-8";
+/* CSS Document */
 *,*:after,*:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -94,16 +91,31 @@ html,body {
     width: 8.33%;
 }
 
+.column.one:nth-child(13n), .columns.one:nth-child(13n) {
+	 padding-left: 0 
+}
+
 .column.two,.columns.two {
     width: 16.66%;
+}
+
+.column.two:nth-child(7n), .columns.two:nth-child(7n) {
+	 padding-left: 0 
 }
 
 .column.three,.columns.three {
     width: 25%;
 }
+.column.three:nth-child(4n), .columns.four:nth-child(4n) {
+	 padding-left: 0 
+}
 
 .column.four,.columns.four {
     width: 33.33%;
+}
+
+.column.four:nth-child(5n), .columns.four:nth-child(5n) {
+	 padding-left: 0 
 }
 
 .column.five,.columns.five {
@@ -113,6 +125,11 @@ html,body {
 .column.six,.columns.six {
     width: 50%;
 }
+
+.column.six:nth-child(3n), .columns.six:nth-child(3n) {
+	 padding-left: 0 
+}
+
 
 .column.seven,.columns.seven {
     width: 58.33%;
@@ -138,7 +155,7 @@ html,body {
     width: 100%;
 }
 
-@media handheld,only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
     .row {
         width: 100%;
         min-width: 0;
@@ -154,7 +171,7 @@ html,body {
         padding-left: 10px;
         padding-right: 10px;
     }
-
+	
     .column.one .column,.column.one .columns,.column.two .column,.column.two .columns,.column.three .column,.column.three .columns,.column.four .column,.column.four .columns,.column.five .column,.column.five .columns,.column.six .column,.column.six .columns,.column.seven .column,.column.seven .columns,.column.eight .column,.column.eight .columns,.column.nine .column,.column.nine .columns,.column.ten .column,.column.ten .columns,.column.eleven .column,.column.eleven .columns,.column.twelve .column,.column.twelve .columns,.columns.one .column,.columns.one .columns,.columns.two .column,.columns.two .columns,.columns.three .column,.columns.three .columns,.columns.four .column,.columns.four .columns,.columns.five .column,.columns.five .columns,.columns.six .column,.columns.six .columns,.columns.seven .column,.columns.seven .columns,.columns.eight .column,.columns.eight .columns,.columns.nine .column,.columns.nine .columns,.columns.ten .column,.columns.ten .columns,.columns.eleven .column,.columns.eleven .columns,.columns.twelve .column,.columns.twelve .columns {
         padding-left: 0;
         padding-right: 0;
